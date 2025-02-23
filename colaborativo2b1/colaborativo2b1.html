@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <!-- head cin el favicon-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="icon" href="img/favicon.ico"> 
+        <link rel="stylesheet" href="../css/colaborativo2b1.css">
+        <script defer src="colaborativo2b1.js"></script>
+        <title>Practica 1</title>
+    </head>
+
+    <nav>
+        <div class="logo">Happy Rocks</div>
+        <ul>
+            <li><a href="layout.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="family.html">Family</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Imágenes en contenedor -->
+    <header>
+        <div class="rockscontainer">
+            <div class="rock-image">
+                <img src="img/1.jpg" alt="Imagen 1">
+            </div>
+            <div class="rock-image">
+                <img src="img/3.jpg" alt="Imagen 2">
+            </div>
+            <div class="rock-image">
+                <img src="img/2.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        <h1>¡Bienvenidos a Happy Rocks!</h1>
+    </header>
+
+    <!-- en el body esta el header con una imagen y una lista con liga pero no se puso un destino
+    <body>
+        <header>
+            <div>
+                <img src="img/roquita.jpg" width="60">
+            </div>
+            <h1>Practica 1 con css</h1>
+            <nav>
+                <ul>
+                    <li><a href="a">eluno</a></li>
+                    <li><a href="b">eldos</a></li>
+                    <li><a href="c">eltres</a></li>
+                </ul>
+         </nav>
+        </header>
+        -->
+        
+        <!-- la seccion prinsipal de la pagina esta dividaia en secciones-->
+        <section class="contenedor">
+            <section class="main">
+                <article>
+                    
+                    <h2>Donde las piedras sonríen y la felicidad es contagiosa.</h2>
+                    <h4>"Pequeñas piedras, grandes sonrisas."</h4>
+                    <p>Cada Happy Rock es un recordatorio de que la alegría puede encontrarse en las cosas más simples. Decora, comparte y esparce felicidad por donde vayas.</p>
+                    
+                    <br>
+
+                    <section class="formulario-container">
+                        <h3><i>Registro en la Tribu</i></h3>
+                        <form id="miFormulario">
+                            <!-- Nombre -->
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" placeholder="¡Tu identidad mística aquí!">
+                            <span class="error" id="errorNombre"></span>
+
+                            <br>
+                            <!-- Correo Electrónico -->
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" placeholder="happy@mail.com">
+                            <span class="error" id="errorEmail"></span>
+                            
+                            <br>
+                            <!-- Contraseña -->
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" placeholder="(No robaremos tus piedras)">
+                            <span class="error" id="errorPassword"></span>
+                            
+                            <br>
+                            <!--ejemplo de uso de selecciones-->
+                            <!-- Tribu -->
+                            <label for="Tribu">Tribu:</label>
+                            <select name="Tribu" id="Departamento">
+                                <option value="Pintapiedras">Pintapiedras</option>
+                                <option value="Mensajeros">Mensajeros</option>
+                                <option value="Aventureros ">Aventureros </option>
+                            </select>
+                            <span class="error" id="errorTribu"></span>
+
+                            <br>
+                            <!--ejemplo de uso de radio-->
+                            <label for="pregunta">¿Hoy es un buen día?</label>
+                            <input type="radio" name="respuesta" value="si" id="si">
+                            <label for="si">Si</label>
+                            <input type="radio" name="respuesta" value="no" id="no">
+                            <label for="no">¡Por supuesto!</label>
+                            <span class="error" id="errorRadio"></span>
+
+                            <br>
+                            <!--ejemplo de uso de num-->
+                            <label for="sabiduria">¿Cuántos secretos ancestrales conoces?</label>
+                            <input type="number" id="sabiduria" name="sabiduria" min="0" max="100" placeholder="0 al 100">
+                            <span class="error" id="errorSabiduria"></span>
+
+                            <br>
+                            <!-- Botón de Envío -->
+                            <button type="submit" class="btn-enviar">Enviar</button>
+
+                        </form>
+                    </section>
+                            
+
+
+                </article>
+            </section>
+
+
+            <!--se usa aside para la parte secundaria del codigo-->
+            <aside>
+                <h3>¿Sabías que…?</h3>
+                <!--usando negritas-->
+                <p>Cada piedra tiene su propia personalidad, solo falta descubrirla con un poco de color.
+                    </p>
+                    <br>
+                    <!--usando italicas-->
+                    <p>Las <i>Happy Rocks</i> han sido encontradas en más de 20 países.
+                    </p>
+                    <br>
+                    <p>Deja una piedra con un mensaje positivo y alguien más la encontrará. ¡Haz el día de alguien mejor! 
+                    </p>
+                    <br>
+                        <!--usando un enlace a otra pagina por medio de otra pestaña-->
+                        <a target="blank" href="https://www.youtube.com/watch?v=68vZX2uUKKA">Click para ser feliz</a>
+            </aside>
+        </section>
+        <!--se agrego un footer-->
+        <footer>"Dibuja sonrisas, pinta alegría y deja huella en el mundo, una piedra a la vez."</footer>
+    </body>
+</html>
